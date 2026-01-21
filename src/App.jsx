@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { ProtectedRoute } from './components/ProtectedRoute';
-import { Login } from './pages/Login';
-import { CaregiverDashboard } from './pages/CaregiverDashboard';
-import { AdminDashboard } from './pages/AdminDashboard';
+import { AuthProvider, useAuth } from '@contexts/AuthContext';
+import { ThemeProvider } from '@contexts/ThemeContext';
+import { ProtectedRoute } from '@components/common/ProtectedRoute';
+import { Login } from '@pages/Login';
+import { CaregiverDashboard } from '@pages/CaregiverDashboard';
+import { AdminDashboard } from '@pages/AdminDashboard';
 import { Loader2 } from 'lucide-react';
 
 function AppRoutes() {

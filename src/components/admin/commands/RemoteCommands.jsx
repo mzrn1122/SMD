@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Send, RotateCcw, RefreshCw, Power, Settings } from 'lucide-react';
 import toast from 'react-hot-toast';
-import { mqttService } from '../../services/mqttService';
+import { mqttService } from '@services/mqttService';
 
 export const RemoteCommands = ({ devices = [] }) => {
     const [selectedDevice, setSelectedDevice] = useState('');
